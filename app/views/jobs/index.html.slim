@@ -1,0 +1,12 @@
+h1
+  | Jobs
+- @jobs.each do |job|
+  .job
+    h2
+      = link_to job.title, job.url
+    p
+      = job.company
+p
+  = paginate @jobs
+p
+  = link_to "Add a job", new_job_path
