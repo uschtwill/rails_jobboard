@@ -1,7 +1,13 @@
 class JobsController < ApplicationController
 
+
+
 	def index
 		@jobs = Job.page(params[:page]).per(2)
+	end
+
+	def show
+		@job = Job.find(params[:id])
 	end
 
 	def new
@@ -15,6 +21,15 @@ class JobsController < ApplicationController
 	  else
 	    render "new"
 	  end
+	end
+
+	def edit
+	end
+
+	def update
+	end
+
+	def delete
 	end
 
 end
