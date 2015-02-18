@@ -4,7 +4,12 @@ h2
   = @job.company
 h3
   = @job.created_at
-  br
+p
+  = @job.description
+h3
   = @job.url
 
-= link_to "Go back to the Listings", :back
+
+= link_to "Go back to the Listings", jobs_path
+br
+= link_to "Edit this Entry", edit_job_path

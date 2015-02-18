@@ -1,6 +1,10 @@
+h1
+	|Edit this entry:
+
 = simple_form_for @job do |form|
   = form.input :title, label: "Job title"
   = form.input :company, label: "Your Company"
   = form.input :description, label: "Job Description"
   = form.input :url, label: "Link to Job"
+  <br>
   = form.button :submit

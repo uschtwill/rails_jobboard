@@ -7,9 +7,14 @@ body {
   color: white;
   font: 14px/1.5 Helvetica, Arial, sans-serif;
   margin: 20px auto;
-  width: 500px;
+  width: 300px;
 }
+
 a {
   color: #efaaca;
   text-decoration: none;
+}
+
+.container {
+	border-bottom: 1px solid #efaaca;
 }

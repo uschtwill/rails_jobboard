@@ -1,12 +1,23 @@
 h1
-  | Jobs
-- @jobs.each do |job|
-  .job
-    h2
-      = link_to job.title, job
-    p
-      = job.company
-p
-  = paginate @jobs
-p
-  = link_to "Add a job", new_job_path
+  | Jobs Listings
+
+div style="float: left"
+	p
+  		= link_to "Add a job", new_job_path
+
+div style="float: right"
+	- @jobs.each do |job|
+
+	  .job 
+	  	div class="container"
+
+		    h2
+		      = link_to job.title, job
+		    p
+		      = job.company
+		      br
+		      = job.created_at 
+
+	p
+	  = paginate @jobs
+
