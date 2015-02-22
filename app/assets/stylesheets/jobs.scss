@@ -2,19 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  background: #a71b3e;
-  color: white;
-  font: 14px/1.5 Helvetica, Arial, sans-serif;
-  margin: 20px auto;
-  width: 300px;
+.job-listing h4 {
+	margin-bottom: 0;
 }
 
-a {
-  color: #efaaca;
-  text-decoration: none;
+.job-listing p {
+	margin-top: 0;
 }
 
-.container {
-	border-bottom: 1px solid #efaaca;
+.job-listing a {
+	color: black;
+}
+
+.brand-logo {
+	margin-left: 30px;
+}
+
+nav.pagination {
+	background-color: #689f38;	
+}
+
+.header-image{
+	background-image: url('header-image.jpg');
+	background-repeat: no-repeat;
+	background-size: auto;
 }

@@ -1,0 +1,8 @@
+= simple_form_for @user do |form|
+  = form.input :first_name, label: "Your Firstname"
+  = form.input :last_name, label: "Your Lastname"
+  = form.input :email, label: "Your E-Mail"
+  = form.input :password, label: "Your Password"
+  = form.input :password_confirmation, label: "Your Password"
+  
+  = form.button :submit
