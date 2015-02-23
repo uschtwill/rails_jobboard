@@ -3,10 +3,9 @@
     .col.s12
       h2
         = @job.title
-  .row
-    .col.s12
       h3
         = @job.company
+      
   .row
     .col.s12
       h5
@@ -45,11 +44,64 @@
       h5
         | Responsibilities:
       p
-        = @job.responsibilities
-  h3
-    = @job.url
+        = @job.responsibility
+
+  .row
+    .col.s12
+      h5
+        | Requirements:
+      p
+        = @job.requirements
+
+  .row
+    .col.s12
+      h5
+        | Perks:
+      p
+        = @job.perks
+
+  .row
+    .col.s12
+      h5
+        | Application:
+      p
+        = @job.application
+
+  .row
+    .col.s6
+      h5
+        | E-Mail: 
+        = @job.email
+    .col.s6
+      h5
+        | Phone: 
+        = @job.phone
+
+  .row
+    .col.s12
+      h5
+        | More Information:
+      p
+        = @job.url
 
 
-  = link_to "Go back to the Listings", jobs_path
+
+  a.waves-effect.waves-light.btn(href="/jobs")
+    i.mdi-file-cloud.left
+      | Button
+
+  a.waves-effect.waves-light.btn(href="/jobs/#{@job.id}/edit")
+    i.mdi-file-cloud.left
+      | Button
+/ <a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+
+
+/ = link_to "Learn More", {controller: "menus", action: "index"}, class: "btn btn-inverse"
+
+  = link_to "Go back to the Listings", {controller: "jobs", action: "index"}, class: "waves-effect waves-light btn"
+    i.mdi-file-cloud.left
+      | Button
+
+
   br
   = link_to "Edit this Entry", edit_job_path
