@@ -20,9 +20,21 @@ ActiveRecord::Schema.define(version: 20150218072102) do
     t.string   "title"
     t.string   "company"
     t.string   "url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
     t.text     "description"
+    t.integer  "salary"
+    t.integer  "working_hours"
+    t.string   "location"
+    t.string   "department"
+    t.string   "team"
+    t.text     "responsibility"
+    t.text     "job_description"
+    t.text     "requirements"
+    t.text     "perks"
+    t.string   "email"
+    t.integer  "phone"
+    t.text     "application"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "users", force: :cascade do |t|
