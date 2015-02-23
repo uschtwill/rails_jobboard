@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+
+.new-job-or-user-form {
+	margin: 30px 0;
+}
