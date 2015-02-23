@@ -1,16 +1,55 @@
 .container
-	h1
-	  = @job.title
-	h2
-	  = @job.company
-	h3
-	  = @job.created_at
-	p
-	  = @job.description
-	h3
-	  = @job.url
+  .row
+    .col.s12
+      h2
+        = @job.title
+  .row
+    .col.s12
+      h3
+        = @job.company
+  .row
+    .col.s12
+      h5
+        | Salary: 
+        = @job.salary
+
+  .row
+    .col.s6
+      p
+        | Online since: 
+        = @job.created_at
+    .col.s6
+      p
+        | Updated on: 
+        = @job.updated_at
+
+  .row
+    .col.s6
+      h5
+        | Department: 
+        = @job.department
+    .col.s6
+      h5
+        | Team: 
+        = @job.team
+  
+  .row
+    .col.s12
+      h5
+        | Job Description:
+      p
+        = @job.description
+
+  .row
+    .col.s12
+      h5
+        | Responsibilities:
+      p
+        = @job.responsibilities
+  h3
+    = @job.url
 
 
-	= link_to "Go back to the Listings", jobs_path
-	br
-	= link_to "Edit this Entry", edit_job_path
+  = link_to "Go back to the Listings", jobs_path
+  br
+  = link_to "Edit this Entry", edit_job_path

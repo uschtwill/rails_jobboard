@@ -1,0 +1,83 @@
+= form_for(@job) do |f|
+  - if @job.errors.any?
+    #error_explanation
+      h2
+        = pluralize(@job.errors.count, "error")
+        |  prohibited this job from being saved:
+      ul
+        - @job.errors.full_messages.each do |message|
+          li
+            = message
+
+  .row
+    .input-field.col.s12
+      = f.text_field(:title, :class => "validate" )
+      = f.label :title
+
+  .row
+    .input-field.col.s12
+      = f.text_field(:company, :class => "validate" )
+      = f.label :company
+
+  .row
+    .input-field.col.s6
+      = f.text_field(:department, :class => "validate" )
+      = f.label :department
+
+    .input-field.col.s6
+      = f.text_field(:team, :class => "validate" )
+      = f.label :team
+
+  .row
+    .input-field.col.s12
+      = f.number_field(:salary, :class => "validate" )
+      = f.label :salary
+  
+  .row
+    .col.s12
+      .row
+        .input-field.col.s12
+          = f.text_area(:description, :class => "materialize-textarea validate" )
+          = f.label :description
+
+  .row
+    .col.s12
+      .row
+        .input-field.col.s12
+          = f.text_area(:responsibility, :class => "materialize-textarea validate" )
+          = f.label :responsibility
+
+  .row
+    .col.s12
+      .row
+        .input-field.col.s12
+          = f.text_area(:requirements, :class => "materialize-textarea validate" )
+          = f.label :requirements
+
+  .row
+    .col.s12
+      .row
+        .input-field.col.s6
+          = f.text_area(:perks, :class => "materialize-textarea validate" )
+          = f.label :perks
+        .input-field.col.s6
+          = f.text_area(:application, :class => "materialize-textarea validate" )
+          = f.label :application
+
+  .row
+    .input-field.col.s6
+      = f.text_field(:email, :class => "validate" )
+      = f.label :email
+
+    .input-field.col.s6
+      = f.text_field(:phone, :class => "validate" )
+      = f.label :phone
+
+  .row
+    .input-field.col.s12
+      = f.text_field(:url, :class => "validate" )
+      = f.label :url
+  
+
+  .actions
+    = f.submit
