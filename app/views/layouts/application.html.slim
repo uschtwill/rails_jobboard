@@ -2,7 +2,7 @@ doctype html
 html
   head
     title
-      | Jobsboard
+      | IJ-Nairobi
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -12,7 +12,7 @@ html
         nav
           div(class="nav-wrapper light-green")
             a(href="/" class="brand-logo")
-              | IJNairobi
+              | IJ-Nairobi
             ul(id="nav-mobile" class="right hide-on-med-and-down")
               li
                 a(href="/jobs")
@@ -44,32 +44,30 @@ html
       div.push
 
     div.page-row
-      footer.page-footer.light-green
+      footer.page-footer.grey.darken-2
         .container
           .row
             .col.l6.s12
               h5.white-text
-                | Footer Content
+                | IJ-Nairobi
               p.grey-text.text-lighten-4
-                | You can use rows and columns here to organize your footer content.
+                | Impact Jobs Nairobi is a Moringa School project and aims to bring value to purpose-driven young job seekers in- and outside of Kenya.
             .col.l4.offset-l2.s12
               h5.white-text
-                | Links
+                | Other Job Sites
               ul
                 li
-                  a.grey-text.text-lighten-3[href="#!"]
-                    | Link 1
+                  a.grey-text.text-lighten-3[href="https://dumaworks.com/"]
+                    | https://dumaworks.com/
                 li
-                  a.grey-text.text-lighten-3[href="#!"]
-                    | Link 2
+                  a.grey-text.text-lighten-3[href="http://www.brightermonday.co.ke/"]
+                    | http://www.brightermonday.co.ke/
                 li
-                  a.grey-text.text-lighten-3[href="#!"]
-                    | Link 3
+                  a.grey-text.text-lighten-3[href="http://www.careerpointkenya.co.ke/"]
+                    | http://www.careerpointkenya.co.ke/
                 li
-                  a.grey-text.text-lighten-3[href="#!"]
-                    | Link 4
+                  a.grey-text.text-lighten-3[href="http://myjobseye.com/"]
+                    | http://myjobseye.com/
         .footer-copyright
           .container
             |  © 2014 Wilhelm Uschtrin
-            a.grey-text.text-lighten-4.right[href="#!"]
-              | More Links

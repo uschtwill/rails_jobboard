@@ -1,23 +1,24 @@
 .container
-  h1
-    | Impact Jobs Nairobi
-
-  h4 Jobs in Nairobi for qualified young professionals, who are looking for purpose in what they do.
-  div
-    p
-        = link_to "Add a job", new_job_path
-
   div
     - @jobs.each do |job| 
-
       .row
         div(class="col s12 m12")
+          a(href="jobs/#{job.id}")
             div(class="card-panel light-green lighten-4 job-listing")
-                span(class="white-text")          
-                h4
-                  = link_to job.title, job
-                h2
-                  = job.company
-    h4
-      = paginate @jobs
+              span 
+                .row
+                  .col.s6.m6        
+                    h3.make-black
+                      = job.title
+                    h5.make-black
+                      = job.company
+                  .col.s6.m6
+                    h5.make-black.push-down28px
+                      | Salary: 
+                      = job.salary
+                    h5.make-black
+                      | Location: 
+                      = job.location
 
+    h5
+      = paginate @jobs
