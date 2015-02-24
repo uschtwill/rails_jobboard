@@ -276,6 +276,71 @@ Job.create(
 	application: "Please transfer  500 KES via till number..."
 	)
 
+Company.create(
+	email: "recruitment@apple.com",
+	password: "applepie",
+	username: "Apple Inc.",
+	website: "http://www.apple.com",   
+	phone: "0705816277",     
+	twitter: "http://twitter.com/apple",   
+	facebook: "http://facebook.com/apple",     
+	location: "Apple Drive, Nairobi",  
+	industry: "Human Resource Development",
+	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
+	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
+	founded: "1/1/1991",   
+	employees: 20000
+	)
+
+Company.create(
+	email: "recruitment@brokeltd.com",
+	password: "weresobroke",
+	username: "Broke Ltd.",
+	website: "http://www.brokeltd.co.ke",   
+	phone: "0705816277",     
+	twitter: "http://www.twitter.com/brokeltd",   
+	facebook: "http://www.facebook.com/brokeltd",     
+	location: "Riverside Dr.",  
+	industry: "Not so much at the moment.",
+	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
+	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
+	founded: "2013",   
+	employees: 3
+	)
+
+Company.create(
+	email: "headlessltd@gmail.com",
+	password: "wedonthaveheads",
+	username: "Headless Ltd.",
+	website: "http://www.headlessltd.co.ke",   
+	phone: "0705816277",     
+	twitter: "http://www.twitter.com/brokeltd",   
+	facebook: "http://www.facebook.com/brokeltd",     
+	location: "Riverside Dr.",  
+	industry: "yeah....",
+	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
+	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
+	founded: "1999",   
+	employees: 200
+	)
+
+Company.create(
+	email: "andonemore@gmail.com",
+	password: "andonemore",
+	username: "One More Company Ltd.",
+	website: "http://www.headlessltd.co.ke",   
+	phone: "0705816277",     
+	twitter: "http://www.twitter.com/brokeltd",   
+	facebook: "http://www.facebook.com/brokeltd",     
+	location: "Off of Mombasa Rd.",  
+	industry: "industry?",
+	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
+	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
+	founded: "1768",   
+	employees: 23
+	)
+
+
 
 
 
