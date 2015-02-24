@@ -7,68 +7,71 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    div.navbar-fixed  
-      nav
-        div(class="nav-wrapper light-green")
-          a(href="#" class="brand-logo")
-            | IJNairobi
-          ul(id="nav-mobile" class="right hide-on-med-and-down")
-            li
-              a(href="sass.html")
-                | Jobs
-            li
-              a(href="components.html")
-                | Companies
-            - if company_signed_in?
+    div.page-row
+      div.navbar-fixed  
+        nav
+          div(class="nav-wrapper light-green")
+            a(href="#" class="brand-logo")
+              | IJNairobi
+            ul(id="nav-mobile" class="right hide-on-med-and-down")
               li
-                = current_company.email
+                a(href="sass.html")
+                  | Jobs
               li
-                = link_to "Edit profile", edit_user_registration_path
-              li
-                = link_to "Logout", destroy_user_session_path, method: :delete
-            - else
-              li
-                = link_to "Sign up", new_company_registration_path
-              li
-                = link_to "Login", new_company_session_path
+                a(href="components.html")
+                  | Companies
+              - if company_signed_in?
+                li
+                  = current_company.email
+                li
+                  = link_to "Edit profile", edit_user_registration_path
+                li
+                  = link_to "Logout", destroy_user_session_path, method: :delete
+              - else
+                li
+                  = link_to "Sign up", new_company_registration_path
+                li
+                  = link_to "Login", new_company_session_path
 
 
-    - if notice
-      p.alert.alert-success
-        = notice
-    - if alert
-      p.alert.alert-danger
-        = alert
-        
-    = yield
+      - if notice
+        p.alert.alert-success
+          = notice
+      - if alert
+        p.alert.alert-danger
+          = alert
+    div.page-row.page-row-expanded     
+      = yield
 
+      div.push
 
-    footer.page-footer.light-green
-      .container
-        .row
-          .col.l6.s12
-            h5.white-text
-              | Footer Content
-            p.grey-text.text-lighten-4
-              | You can use rows and columns here to organize your footer content.
-          .col.l4.offset-l2.s12
-            h5.white-text
-              | Links
-            ul
-              li
-                a.grey-text.text-lighten-3[href="#!"]
-                  | Link 1
-              li
-                a.grey-text.text-lighten-3[href="#!"]
-                  | Link 2
-              li
-                a.grey-text.text-lighten-3[href="#!"]
-                  | Link 3
-              li
-                a.grey-text.text-lighten-3[href="#!"]
-                  | Link 4
-      .footer-copyright
+    div.page-row
+      footer.page-footer.light-green
         .container
-          |  © 2014 Wilhelm Uschtrin
-          a.grey-text.text-lighten-4.right[href="#!"]
-            | More Links
+          .row
+            .col.l6.s12
+              h5.white-text
+                | Footer Content
+              p.grey-text.text-lighten-4
+                | You can use rows and columns here to organize your footer content.
+            .col.l4.offset-l2.s12
+              h5.white-text
+                | Links
+              ul
+                li
+                  a.grey-text.text-lighten-3[href="#!"]
+                    | Link 1
+                li
+                  a.grey-text.text-lighten-3[href="#!"]
+                    | Link 2
+                li
+                  a.grey-text.text-lighten-3[href="#!"]
+                    | Link 3
+                li
+                  a.grey-text.text-lighten-3[href="#!"]
+                    | Link 4
+        .footer-copyright
+          .container
+            |  © 2014 Wilhelm Uschtrin
+            a.grey-text.text-lighten-4.right[href="#!"]
+              | More Links
