@@ -1,6 +1,7 @@
 # == Route Map
 #
 #                      Prefix Verb   URI Pattern                        Controller#Action
+#             companies_index GET    /companies/index(.:format)         companies#index
 #         new_company_session GET    /companies/sign_in(.:format)       devise/sessions#new
 #             company_session POST   /companies/sign_in(.:format)       devise/sessions#create
 #     destroy_company_session DELETE /companies/sign_out(.:format)      devise/sessions#destroy
@@ -28,6 +29,9 @@
 #
 
 Rails.application.routes.draw do
+  # get 'companies'
+  get '/companies' => 'companies#index'
+
   devise_for :companies
   resources :jobs
   # root 'jobs#index'
