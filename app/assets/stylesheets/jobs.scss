@@ -23,7 +23,15 @@ nav.pagination {
 }
 
 .header-image{
-	background-image: url('header-image.jpg');
+	background-image: url('header-image3.jpg');
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
+	height: 600px;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.3);
+	padding-top: 200px;
+	border-radius: 5%;
+	
 }
