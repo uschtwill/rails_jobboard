@@ -1,33 +1,31 @@
+// EDIT PROFILE FORM
+
 .container
-  h2
+  h3
     | Edit 
     = resource_name.to_s.humanize
   = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
     = devise_error_messages!
-    .field
-      = f.label :email
-      br
-      = f.email_field :email, autofocus: true
-    - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-      div
-        | Currently waiting confirmation for: 
-        = resource.unconfirmed_email
-    .field
-      = f.label :password
-      i
-        | (leave blank if you don't want to change it)
-      br
-      = f.password_field :password, autocomplete: "off"
-    .field
-      = f.label :password_confirmation
-      br
-      = f.password_field :password_confirmation, autocomplete: "off"
-    .field
-      = f.label :current_password
-      i
-        | (we need your current password to confirm your changes)
-      br
-      = f.password_field :current_password, autocomplete: "off"
+    .row
+      .input-field.col.s12
+        = f.email_field :email, autofocus: true
+        = f.label :email
+      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+        div
+          | Currently waiting confirmation for: 
+          = resource.unconfirmed_email
+    .row
+      .input-field.col.s12
+        = f.password_field :password, autocomplete: "off"
+        = f.label :password
+    .row
+      .input-field.col.s12
+        = f.password_field :password_confirmation, autocomplete: "off"
+        = f.label :password_confirmation
+    .row
+      .input-field.col.s12
+        = f.password_field :current_password, autocomplete: "off"      
+        = f.label :current_password
     .actions
       = f.submit "Update"
   h3

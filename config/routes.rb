@@ -1,23 +1,30 @@
 # == Route Map
 #
-#    Prefix Verb   URI Pattern               Controller#Action
-#     users GET    /users(.:format)          users#index
-#           POST   /users(.:format)          users#create
-#  new_user GET    /users/new(.:format)      users#new
-# edit_user GET    /users/:id/edit(.:format) users#edit
-#      user GET    /users/:id(.:format)      users#show
-#           PATCH  /users/:id(.:format)      users#update
-#           PUT    /users/:id(.:format)      users#update
-#           DELETE /users/:id(.:format)      users#destroy
-#      jobs GET    /jobs(.:format)           jobs#index
-#           POST   /jobs(.:format)           jobs#create
-#   new_job GET    /jobs/new(.:format)       jobs#new
-#  edit_job GET    /jobs/:id/edit(.:format)  jobs#edit
-#       job GET    /jobs/:id(.:format)       jobs#show
-#           PATCH  /jobs/:id(.:format)       jobs#update
-#           PUT    /jobs/:id(.:format)       jobs#update
-#           DELETE /jobs/:id(.:format)       jobs#destroy
-#      root GET    /                         jobs#index
+#                      Prefix Verb   URI Pattern                        Controller#Action
+#         new_company_session GET    /companies/sign_in(.:format)       devise/sessions#new
+#             company_session POST   /companies/sign_in(.:format)       devise/sessions#create
+#     destroy_company_session DELETE /companies/sign_out(.:format)      devise/sessions#destroy
+#            company_password POST   /companies/password(.:format)      devise/passwords#create
+#        new_company_password GET    /companies/password/new(.:format)  devise/passwords#new
+#       edit_company_password GET    /companies/password/edit(.:format) devise/passwords#edit
+#                             PATCH  /companies/password(.:format)      devise/passwords#update
+#                             PUT    /companies/password(.:format)      devise/passwords#update
+# cancel_company_registration GET    /companies/cancel(.:format)        devise/registrations#cancel
+#        company_registration POST   /companies(.:format)               devise/registrations#create
+#    new_company_registration GET    /companies/sign_up(.:format)       devise/registrations#new
+#   edit_company_registration GET    /companies/edit(.:format)          devise/registrations#edit
+#                             PATCH  /companies(.:format)               devise/registrations#update
+#                             PUT    /companies(.:format)               devise/registrations#update
+#                             DELETE /companies(.:format)               devise/registrations#destroy
+#                        jobs GET    /jobs(.:format)                    jobs#index
+#                             POST   /jobs(.:format)                    jobs#create
+#                     new_job GET    /jobs/new(.:format)                jobs#new
+#                    edit_job GET    /jobs/:id/edit(.:format)           jobs#edit
+#                         job GET    /jobs/:id(.:format)                jobs#show
+#                             PATCH  /jobs/:id(.:format)                jobs#update
+#                             PUT    /jobs/:id(.:format)                jobs#update
+#                             DELETE /jobs/:id(.:format)                jobs#destroy
+#                        root GET    /                                  welcome#index
 #
 
 Rails.application.routes.draw do
