@@ -1,8 +1,10 @@
-.container
-  h1
-    | Impact Jobs Nairobi
+.header-image
+  .container.jumbotron
+    h1
+      | Impact Jobs Nairobi
 
-  h4 Jobs in Nairobi for qualified young professionals, who are looking for purpose in what they do.
+    h4 Jobs in Nairobi for qualified young professionals, who are looking for purpose in what they do.
+.container
   div
     p
         = link_to "Add a job", new_job_path
@@ -20,4 +22,3 @@
                   = job.company
     h4
       = paginate @jobs
-
