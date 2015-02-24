@@ -26,6 +26,54 @@
       .input-field.col.s12
         = f.password_field :current_password, autocomplete: "off"      
         = f.label :current_password
+    .row
+      .input-field.col.s12
+        = f.text_field :username
+        = f.label :username
+    .row
+      .input-field.col.s12
+        = f.url_field :website
+        = f.label :website
+    .row
+      .input-field.col.s12
+        = f.text_field :phone
+        = f.label :phone
+    .row
+      .input-field.col.s12
+        = f.url_field :twitter
+        = f.label :twitter
+    .row
+      .input-field.col.s12
+        = f.url_field :facebook
+        = f.label :facebook
+    .row
+      .input-field.col.s12
+        = f.text_field :location
+        = f.label :location
+    .row
+      .input-field.col.s12
+        = f.text_field :industry
+        = f.label :industry
+    .row
+      .col.s12
+        .row
+          .input-field.col.s12
+            = f.text_area(:vision, :class => "materialize-textarea validate" )
+            = f.label :vision
+    .row
+      .col.s12
+        .row
+          .input-field.col.s12
+            = f.text_area(:mission, :class => "materialize-textarea validate" )
+            = f.label :mission
+    .row
+      .input-field.col.s12
+        = f.date_field(:founded, :class => "datepicker" )
+        = f.label :founded
+    .row
+      .input-field.col.s12
+        = f.number_field :employees
+        = f.label :employees
     .actions
       = f.submit "Update"
   h3
