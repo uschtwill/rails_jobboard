@@ -19,15 +19,24 @@ html
             li
               a(href="components.html")
                 | Companies
-            li
-              a(href="javascript.html")
-                | Log In
+            - if company_signed_in?
+              li
+                = current_company.email
+              li
+                = link_to "Edit profile", edit_user_registration_path
+              li
+                = link_to "Logout", destroy_user_session_path, method: :delete
+            - else
+              li
+                = link_to "Sign up", new_company_registration_path
+              li
+                = link_to "Login", new_company_session_path
 
 
-    if notice
+    - if notice
       p.alert.alert-success
         = notice
-    if alert
+    - if alert
       p.alert.alert-danger
         = alert
         
