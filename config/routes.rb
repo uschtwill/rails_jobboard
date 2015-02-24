@@ -21,6 +21,7 @@
 #
 
 Rails.application.routes.draw do
+  devise_for :companies
   resources :jobs
   root 'jobs#index'
 
