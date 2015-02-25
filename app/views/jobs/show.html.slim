@@ -4,7 +4,7 @@
       h2
         = @job.title
       h3
-        = @job.company
+        = @job.company.username
       
   .row
     .col.s12
@@ -89,9 +89,9 @@
   a.waves-effect.waves-light.light-green.btn(href="/jobs")
     | Back
 
- // - if current_user.id == @job.company.id ((NOT WORKING YET, AS THERE ARE NO RELATIONSHIPS YET))
-  a.waves-effect.waves-light.light-green.btn.margin-left-20px(href="/jobs/#{@job.id}/edit")
-    | Edit
+  - if company_signed_in? && current_company.id == @job.company.id
+    a.waves-effect.waves-light.light-green.btn.margin-left-20px(href="/jobs/#{@job.id}/edit")
+      | Edit
 
   / a.waves-effect.waves-light.btn.margin-left-20px
   /   i.mdi-file-cloud.right

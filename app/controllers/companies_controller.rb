@@ -1,6 +1,6 @@
 class CompaniesController < ApplicationController
   def index
-  	@companies = Company.page(params[:page]).per(5)
+  	@companies = Company.page(params[:page]).per(3)
   end
 
   def show

@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 20150225141234) do
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title"
-    t.string   "company"
     t.string   "url"
     t.text     "description"
     t.integer  "salary"
