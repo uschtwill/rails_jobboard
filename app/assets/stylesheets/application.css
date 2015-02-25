@@ -36,3 +36,15 @@ body {
 	height: 100%; 
 }
 
+.listing-heading {
+	margin-bottom: 0;
+}
+
+.listing-heading > .col > .card-panel {
+	padding: 5px 0 5px 20px;
+	height: 60px;
+}
+
+.listing-heading > .col > .card-panel > h3 {
+	margin: 3px 0 0 0;
+}
