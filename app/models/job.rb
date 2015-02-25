@@ -27,4 +27,6 @@ class Job < ActiveRecord::Base
   validates :title, presence: true
   validates :company, presence: true
   validates :url, presence: true
+
+  belongs_to :company
 end
