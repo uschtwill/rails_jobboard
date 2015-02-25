@@ -87,10 +87,11 @@
 
 
   a.waves-effect.waves-light.light-green.btn(href="/jobs")
-      | Back
+    | Back
 
+ // - if current_user.id == @job.company.id ((NOT WORKING YET, AS THERE ARE NO RELATIONSHIPS YET))
   a.waves-effect.waves-light.light-green.btn.margin-left-20px(href="/jobs/#{@job.id}/edit")
-      | Edit
+    | Edit
 
   / a.waves-effect.waves-light.btn.margin-left-20px
   /   i.mdi-file-cloud.right

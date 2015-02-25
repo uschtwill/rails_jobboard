@@ -1,5 +1,7 @@
 class JobsController < ApplicationController
 
+	before_action :authenticate_company!, except: [:index, :show]
+
 	def index
 		@jobs = Job.page(params[:page]).per(5)
 	end
@@ -21,24 +23,24 @@ class JobsController < ApplicationController
 	  end
 	end
 
-	 def edit
-	 	@job = Job.find(params[:id])
-   end
+	def edit
+		@job = Job.find(params[:id])
+	end
 
-	 def update
+	def update
 
-	 	@job = Job.find(params[:id])
+		@job = Job.find(params[:id])
 
-    respond_to do |format|
-      if @job.update(job_params)
-        format.html { redirect_to @job, notice: 'The job listing was successfully updated.' }
-        format.json { render :show, status: :ok, location: @job }
-      else
-        format.html { render :edit }
-        format.json { render json: @job.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+		respond_to do |format|
+			if @job.update(job_params)
+			format.html { redirect_to @job, notice: 'The job listing was successfully updated.' }
+			format.json { render :show, status: :ok, location: @job }
+			else
+			format.html { render :edit }
+			format.json { render json: @job.errors, status: :unprocessable_entity }
+			end
+		end
+	end
 
 	def delete
 	end
