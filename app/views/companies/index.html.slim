@@ -1,4 +1,9 @@
 .container
+  .row
+    .col.s12.m5
+      .card-panel.light-green.darken-2
+        h3.white-text
+          | Companies
   div
     - @companies.each do |company| 
       .row
@@ -9,16 +14,24 @@
                 .row
                   .col.s6.m6        
                     h3.make-black
-                      = company.email
-                  /   h5.make-black
-                  /     = job.company
-                  / .col.s6.m6
-                  /   h5.make-black.push-down28px
-                  /     | Salary: 
-                  /     = job.salary
-                  /   h5.make-black
-                  /     | Location: 
-                  /     = job.location
+                      = company.username
+                    h5.make-black
+                      = company.website
+                  .col.s6.m6
+                    h5.make-black
+                      | Industry: 
+                      = company.industry
+                    h5.make-black
+                      | Employees: 
+                      = company.employees
+                    h5.make-black
+                      | Founded: 
+                      = company.founded
+                .row
+                  .col.s12.m12
+                    p.make-black
+                      | Vision: 
+                      = company.vision
 
     h5
       = paginate @companies

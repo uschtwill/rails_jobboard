@@ -1,5 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+# This file should contain all the record creation needed to seed the database with its default values. # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
 #
@@ -288,7 +287,7 @@ Company.create(
 	industry: "Human Resource Development",
 	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
 	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
-	founded: "1/1/1991",   
+	founded: "1991",   
 	employees: 20000
 	)
 
@@ -301,7 +300,7 @@ Company.create(
 	twitter: "http://www.twitter.com/brokeltd",   
 	facebook: "http://www.facebook.com/brokeltd",     
 	location: "Riverside Dr.",  
-	industry: "Not so much at the moment.",
+	industry: "Not too sure...",
 	vision: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",  
 	mission: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
 	founded: "2013",   
@@ -328,7 +327,7 @@ Company.create(
 	email: "andonemore@gmail.com",
 	password: "andonemore",
 	username: "One More Company Ltd.",
-	website: "http://www.headlessltd.co.ke",   
+	website: "http://www.onemorecompany.co.ke",   
 	phone: "0705816277",     
 	twitter: "http://www.twitter.com/brokeltd",   
 	facebook: "http://www.facebook.com/brokeltd",     
