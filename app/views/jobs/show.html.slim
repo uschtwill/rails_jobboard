@@ -86,20 +86,12 @@
 
 
 
-  a.waves-effect.waves-light.btn(href="/jobs")
+  a.waves-effect.waves-light.light-green.btn(href="/jobs")
       | Back
 
-  a.waves-effect.waves-light.btn(href="/jobs/#{@job.id}/edit")
+  a.waves-effect.waves-light.light-green.btn.margin-left-20px(href="/jobs/#{@job.id}/edit")
       | Edit
-/ <a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
 
-
-/ = link_to "Learn More", {controller: "menus", action: "index"}, class: "btn btn-inverse"
-
-  = link_to "Go back to the Listings", {controller: "jobs", action: "index"}, class: "waves-effect waves-light btn"
-    i.mdi-file-cloud.left
-      | Button
-
-
-  br
-  = link_to "Edit this Entry", edit_job_path
+  / a.waves-effect.waves-light.btn.margin-left-20px
+  /   i.mdi-file-cloud.right
+  /     | Button

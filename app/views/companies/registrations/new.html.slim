@@ -21,18 +21,7 @@
       .input-field.col.s12
         = f.password_field :password_confirmation, autocomplete: "off"
         = f.label :password_confirmation
-    .row
-      .input-field.col.s12
-        = f.password_field :password, autocomplete: "off"
-        = f.label :password
-    .row
-      .input-field.col.s12
-        = f.password_field :password_confirmation, autocomplete: "off"
-        = f.label :password_confirmation
-    .row
-      .input-field.col.s12
-        = f.password_field :current_password, autocomplete: "off"      
-        = f.label :current_password
+
     .row
       .input-field.col.s12
         = f.text_field :username
@@ -81,6 +70,7 @@
       .input-field.col.s12
         = f.number_field :employees
         = f.label :employees
+  
     .actions
       = f.submit "Sign up"
   = render "companies/shared/links"
