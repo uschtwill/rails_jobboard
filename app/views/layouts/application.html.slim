@@ -43,6 +43,15 @@ html
 
       div.push
 
+    - if company_signed_in?
+      .fixed-action-btn[style="bottom: 45px; right: 24px;"]
+        a.btn-floating.btn-large.indigo.accent-2(href="jobs/new")
+        br
+        strong
+          | ADD JOB
+      
+
+
     div.page-row
       footer.page-footer.grey.darken-2
         .container
