@@ -35,7 +35,8 @@ Rails.application.routes.draw do
   # get 'companies'
   get '/companies' => 'companies#index'
 
-  devise_for :companies
+  devise_for :companies, :path => ''
+
   resources :jobs
   # root 'jobs#index'
 
