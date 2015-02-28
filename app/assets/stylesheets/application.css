@@ -52,3 +52,11 @@ body {
 .margin-left-20px {
 	margin-left: 20px;
 }
+
+.btn-floating {
+	margin-bottom: 0;
+}
+
+.make-font-size-25px {
+	font-size: 25px;
+}

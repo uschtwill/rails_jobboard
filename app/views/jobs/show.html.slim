@@ -4,7 +4,8 @@
       h2
         = @job.title
       h3
-        = @job.company.username
+        a.black-text(href="/companies/#{@job.company.id}")
+          = @job.company.username
       
   .row
     .col.s12
