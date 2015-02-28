@@ -3,11 +3,20 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+group :development do
+  gem 'better_errors'
+  gem 'pry-rails'
+end
+
+
+gem 'rack-dev-mark'
 gem 'devise'
 gem 'annotate'
 gem 'slim'
 gem 'kaminari'
 gem 'materialize-sass'
+gem 'binding_of_caller'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
